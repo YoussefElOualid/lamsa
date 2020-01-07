@@ -1,0 +1,15 @@
+@{if !url || url.indexOf('detail') > -1 }
+<div id="breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            @{foreach m in sitemap()}
+                @{if m.id === 'category'}
+                    <li><a href="@{m.url}">@{m.name}</a></li>
+                @{else}
+                    <li><a href="@{m.url}">@{m.name}</a></li>
+                @{fi}
+            @{end}
+        </ul>
+    </div>
+</div>
+@{fi}

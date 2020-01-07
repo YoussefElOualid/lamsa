@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="robots" content="all,follow" />
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="//cdn.componentator.com/spa.min@14.css" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,700" />
+	<link rel="stylesheet" href="@{global.css}" />
+	<script src="/default/js/component.js"></script>
+
+	@{import('meta', 'head', 'global.css', 'default.js', 'favicon.ico')}
+	<script>var LOGGED = +'@{if user}1@{else}0@{fi}';</script>
+</head>
+<body data-jc="exec,binder,modificator">
+<header>
+	<div data-jc="loading" class="ui-loading@{if !repository.loading} hidden@{fi}"></div>
+	<div data-jc="shoppingcart" data-jc-path="shoppingcart" data-jc-config="discount:@{if user}@{user.discount}@{else}0@{fi}"></div>
+	<div data-jc="message" data-jc-config="button:@(Close)"></div>
+	<div data-jc="autocomplete"></div>
+
+	<div id="top-header">
+		<div class="container">
+			<div class="pull-left">
+				<span>Welcome to E-shop!</span>
+			</div>
+			<div class="pull-right">
+				<ul class="header-top-links">
+					<li><a href="#">Store</a></li>
+					<li><a href="#">Newsletter</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li class="dropdown default-dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">ENG <i class="fa fa-caret-down"></i></a>
+						<ul class="custom-menu">
+							<li><a href="#">English (ENG)</a></li>
+							<li><a href="#">Russian (Ru)</a></li>
+							<li><a href="#">French (FR)</a></li>
+							<li><a href="#">Spanish (Es)</a></li>
+						</ul>
+					</li>
+					<li class="dropdown default-dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">USD <i class="fa fa-caret-down"></i></a>
+						<ul class="custom-menu">
+							<li><a href="#">USD ($)</a></li>
+							<li><a href="#">EUR (€)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /top Header -->
+
+	<!-- header -->
+	<div id="header">
+		<div class="container">
+			<div class="pull-left">
+				<!-- Logo -->
+				<div class="header-logo">
+					<a class="logo" href="/">
+						<img src="/img/logo.png" alt="">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Search -->
+				<div class="header-search">
+					<form class="search" action="@{sitemap_url('category')}" method="get">
+						<input class="input search-input" type="text" placeholder="@(Search products ...)" name="q" value="@{query.q}" id="search" autocomplete="off" />
+						<select class="input search-categories">
+							<option value="0">All Categories</option>
+							<option value="1">Category 01</option>
+							<option value="1">Category 02</option>
+						</select>
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<!-- /Search -->
+			</div>
+			<div class="pull-right">
+				<ul class="header-btns">
+					<!-- Account -->
+					<li class="header-account dropdown default-dropdown">
+						<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+							<div class="header-btns-icon">
+								<i class="fa fa-user-o"></i>
+							</div>
+							<strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
+						</div>
+						@{if user}
+							<a href="@{sitemap_url('account')}" class="b">@{user.name}</a>
+							<ul class="custom-menu">
+								<li><a href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Settings)</a></li>
+								<li><a href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Sign out)</a></li>
+								<!--	<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+								<li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
+								<li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
+								<li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
+								<li><a href="#"><i class="fa fa-unlock-alt"></i> Login</a></li>
+								<li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>-->
+							</ul>
+
+						@{else}
+							<a href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Sign in)</a>
+						@{fi}
+					</li>
+					<!-- /Account -->
+
+					<!-- Cart -->
+					<li class="header-cart dropdown default-dropdown">
+						<a href="@{sitemap_url('checkout')}" data-m="shoppingcart.sum + shoppingcart"
+						herf="@{sitemap_url('checkout')}">
+							<div class="header-btns-icon">
+								<i class="fa fa-shopping-cart"></i>
+<!--
+								<span class="qty">3</span>
+-->
+							</div>
+							<strong class="text-uppercase">@(My Cart):</strong>
+							<br>
+							<span data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value.format(2) : (0).format(2))">...</span>
+						</a>
+					</li>
+					<!-- /Cart -->
+
+					<!-- Mobile nav toggle-->
+					<li class="nav-toggle">
+						<button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
+					</li>
+					<!-- / Mobile nav toggle -->
+				</ul>
+			</div>
+		</div>
+		<!-- header -->
+	</div>
+	<!-- container -->
+</header>
+<div id="navigation">
+	<!-- container -->
+	<div class="container">
+		<div id="responsive-nav">
+			<!-- category nav -->
+			@{view('partials/categories')}
+			<!-- /category nav -->
+
+			<!-- menu nav -->
+			<div class="menu-nav">
+				<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
+				<ul class="menu-list">
+					@{foreach m in F.global.navigations.menu.children}
+						<li><a href="@{m.url}">@{if m.icon}<i class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a></li>
+					@{end}
+				</ul>
+			</div>
+			<!-- menu nav -->
+		</div>
+	</div>
+	<!-- /container -->
+</div>
+<!-- breadcrumb -->
+@{view('partials/breadcrumb')}
+
+<!-- silder -->
+@{view('partials/sliders')}
+
+<div class="section">
+	<div class="container">
+		@{body}
+
+	</div>
+</div>
+<footer id="footer" class="section section-grey">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<!-- footer widget -->
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="footer">
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a class="logo" href="/">
+							<img src="/img/logo.png" alt="">
+						</a>
+					</div>
+					<!-- /footer logo -->
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+
+					<!-- footer social -->
+					<ul class="footer-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+					</ul>
+					<!-- /footer social -->
+				</div>
+			</div>
+			<!-- /footer widget -->
+
+			<!-- footer widget -->
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="footer">
+					<h3 class="footer-header">My Account</h3>
+					<ul class="list-links">
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">My Wishlist</a></li>
+						<li><a href="#">Compare</a></li>
+						<li><a href="#">Checkout</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer widget -->
+
+			<div class="clearfix visible-sm visible-xs"></div>
+
+			<!-- footer widget -->
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="footer">
+					<h3 class="footer-header">Customer Service</h3>
+					<ul class="list-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Shiping &amp; Return</a></li>
+						<li><a href="#">Shiping Guide</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer widget -->
+
+			<!-- footer subscribe -->
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="footer">
+					<h3 class="footer-header">Stay Connected</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+					<form>
+						<div class="form-group">
+							<input class="input" placeholder="Enter Email Address">
+						</div>
+						<button class="primary-btn">Join Newslatter</button>
+					</form>
+				</div>
+			</div>
+			<!-- /footer subscribe -->
+		</div>
+		<!-- /row -->
+		<hr>
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<!-- footer copyright -->
+				<div class="footer-copyright">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright ©<script>document.write(new Date().getFullYear());</script>2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</div>
+				<!-- /footer copyright -->
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</footer>
+<script src="@{global.js}"></script>
+<!--<script src="/default/js/jquery.min.js"></script>-->
+<script src="/default/js/bootstrap.min.js"></script>
+<script src="/default/js/slick.min.js"></script>
+<script src="/default/js/nouislider.min.js"></script>
+<script src="/default/js/jquery.zoom.min.js"></script>
+<script src="/default/js/main.js"></script>
+
+</body>
+
+
+<!--<body data-jc="exec,binder,modificator">
+	<br />
+	<div data-jc="loading" class="ui-loading@{if !repository.loading} hidden@{fi}"></div>
+	<div data-jc="shoppingcart" data-jc-path="shoppingcart" data-jc-config="discount:@{if user}@{user.discount}@{else}0@{fi}"></div>
+	<div data-jc="message" data-jc-config="button:@(Close)"></div>
+	<div data-jc="autocomplete"></div>
+
+	<div class="container">
+
+		<div class="relative">
+			<div class="account">
+				@{if user}
+					<a href="@{sitemap_url('account')}" class="b">@{user.name}</a>
+					<a href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Settings)</a>
+					<a href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Sign out)</a>
+				@{else}
+					<a href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Sign in)</a>
+				@{fi}
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3">
+				<section class="categories">
+					<a href="/" class="logo"><img src=/img/logo.png" alt="@{'%name'}" border="0" /></a>
+					<div class="categoriescontainer">
+						<div class="categoriesbody bg-yellow fs12 ui-center m">
+							This is a new version of new <b>Total.js Eshop</b>. This version will be available soon for all Total.js members.
+						</div>
+
+						<div class="categoriesbody npb">
+							<div class="caption">@(We recommend)</div>
+						</div>
+						<nav>
+							@{foreach m in F.global.navigations.panel.children}
+								<a href="@{m.url}"><i class="fa fa-caret-right"></i>@{m.name}</a>
+							@{end}
+							<a href="@{sitemap_url('new')}"><i class="fa fa-caret-right"></i>@(New goods)</a>
+							<a href="@{sitemap_url('top')}"><i class="fa fa-caret-right"></i>@(Top products)</a>
+							<a href="@{sitemap_url('popular')}"><i class="fa fa-caret-right"></i>@(Popular products)<span>@(NEW)</span></a>
+							<a href="@{sitemap_url('category')}"><i class="fa fa-caret-right"></i>@(All products)</a>
+						</nav>
+						<div class="categoriesbody npb">
+							<div class="caption">@(Categories)</div>
+						</div>
+						@{view('partials/categories')}
+					</div>
+					<button id="mainmenu"><i class="fa fa-chevron-down"></i></button>
+				</section>
+			</div>
+			<div class="col-md-9">
+				<section class="body">
+
+					<header>
+						<nav>
+							@{foreach m in F.global.navigations.menu.children}
+								<a href="@{m.url}">@{if m.icon}<i class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
+							@{end}
+						</nav>
+						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">
+							<a href="@{sitemap_url('checkout')}"><b data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value.format(2) : (0).format(2))">...</b><span>@(Your shopping cart)</span></a>
+						</div>
+						<form class="search" action="@{sitemap_url('category')}" method="get">
+							<button><i class="fa fa-search"></i></button>
+							<div><input type="text" placeholder="@(Search products ...)" name="q" value="@{query.q}" id="search" autocomplete="off" /></div>
+						</form>
+					</header>
+
+					<nav class="breadcrumb">
+						@{foreach m in sitemap()}
+							@{if m.id === 'category'}
+								<i class="fa fa-caret-right"></i><a href="@{m.url}">@{m.name}</a>
+							@{else}
+								<i class="fa fa-caret-right"></i><a href="@{m.url}">@{m.name}</a>
+							@{fi}
+						@{end}
+					</nav>
+					@{body}
+				</section>
+			</div>
+		</div>
+	</div>
+	<br />
+	<br />
+
+	<script src="@{global.js}"></script>
+
+</body>-->
+</html>
