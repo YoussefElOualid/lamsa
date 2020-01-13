@@ -76,3 +76,215 @@
 button[disabled]{
     background: #ddd;
 }
+.ui-checkbox {
+    margin-bottom: 5px;
+    line-height: 10px;
+    font-size: 12px
+}
+
+.ui-checkbox span {
+    cursor: pointer;
+    vertical-align: middle
+}
+
+.ui-checkbox div {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #E0E0E0;
+    margin-right: 6px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 1px 0 0 1px;
+    background-color: white;
+    border-radius: 3px
+}
+
+.ui-checkbox .fa {
+    display: none
+}
+
+.ui-checkbox-checked div {
+    background-color: #017CCA;
+    border-color: #017CCA
+}
+
+.ui-checkbox-checked .fa {
+    display: block !important
+}
+
+.ui-checkbox.ui-disabled div {
+    background-color: #F0F0F0 !important;
+    border-color: #E0E0E0 !important;
+    color: gray !important
+}
+
+
+.ui-textarea {
+    border: 1px solid #E0E0E0;
+    padding: 4px 5px;
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: white
+}
+
+.ui-textarea textarea {
+    border: 0;
+    width: 100%;
+    outline: 0;
+    font: normal 14px Arial;
+    color: black;
+    resize: none;
+    min-height: 50px;
+    background-color: white;
+    padding: 0
+}
+
+.ui-textarea-label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: left
+}
+
+.ui-textarea-label .fa {
+    margin-right: 5px
+}
+
+.ui-textarea-label-required {
+    font-weight: bold
+}
+
+.ui-textarea-label-required:before {
+    color: red;
+    content: '***';
+    margin-right: 5px
+}
+
+.ui-textarea-invalid {
+    border-color: #E7B8B8 !important;
+    background-color: #FFF3F3 !important
+}
+
+.ui-textarea-invalid textarea {
+    background-color: #FFF3F3 !important
+}
+
+.ui-textarea-monospace textarea {
+    font-family: monospace;
+    font-size: 14px
+}
+
+.ui-textarea-helper {
+    margin-top: 8px;
+    font-size: 11px;
+    color: red;
+    text-align: left;
+    display: none
+}
+
+.ui-textarea-helper-show {
+    display: block
+}
+
+.ui-disabled.ui-textarea {
+    background-color: #F0F0F0;
+    cursor: not-allowed
+}
+
+.ui-disabled.ui-textarea textarea {
+    background-color: #F0F0F0
+}
+
+
+.ui-dropdown-values {
+    position: relative;
+    display: block;
+    height: 29px;
+    text-align: left
+}
+
+.ui-dropdown {
+    border: 1px solid #E0E0E0;
+    padding: 0 5px 0 10px;
+    border-radius: 2px;
+    outline: 0;
+    height: 29px;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    background-color: white;
+    position: relative
+}
+
+.ui-dropdown select {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    height: 24px;
+    background: white url(data:image/gif;base64,R0lGODdhEAAQAKIAAAAAABwcHCQkJJWVlZWVldvb2+Tk5AAAACH5BAEAAAcALAAAAAAQABAAAAMveLrcrsY8V0Ioc1UAbt5ch1FBGHrNIKzsOmRwPKkt+zagieLlOT6g3aQizERksQQAOw==) no-repeat 100% 50%;
+    background-size: 12px;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+    padding: 0;
+    margin: 2px 0 0 -3px;
+    color: black;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none
+}
+
+.ui-dropdown-label {
+    margin-bottom: 5px;
+    font-size: 12px
+}
+
+.ui-dropdown-label .fa {
+    width: 14px
+}
+
+.ui-dropdown-label-required {
+    font-weight: bold
+}
+
+.ui-dropdown-label-required:before {
+    color: red;
+    content: '***';
+    margin-right: 5px
+}
+
+.ui-dropdown-invalid {
+    border-color: #E1A1A1 !important;
+    background-color: #FFF3F3 !important
+}
+
+.ui-dropdown-invalid select {
+    background-color: #FFF3F3 !important
+}
+
+.ui-disabled select {
+    background-color: #F0F0F0;
+    cursor: not-allowed;
+    color: #A0A0A0
+}
+
+.ui-disabled .ui-dropdown {
+    background-color: #F0F0F0;
+    cursor: not-allowed
+}
+
+.ui-disabled .ui-dropdown .fa {
+    color: #A0A0A0
+}
+
+.list-group-item.disabled {
+    background: #f86849;
+    color: #fff;
+}

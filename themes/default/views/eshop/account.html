@@ -1,8 +1,57 @@
 @{repository.loading = true}
-
-<h1>@{title}</h1>
-
 <div class="row">
+	<div class="col-md-4">
+		<div class="list-group">
+			<div href="#" class="list-group-item disabled">
+				@{title}
+			</div>
+			<div class="list-group-item">@(Account name): @{user.name}</div>
+			<div class="list-group-item">@(Email address): @{user.email}</div>
+			<div class="list-group-item">@(Phone number): @{if user.phone}@{user.phone}@{else}@(undefined)@{fi}</div>
+			<div class="list-group-item">@(Discount): @{user.discount.format(2)}%</div>
+		</div>
+		<div>
+			<a href="@{sitemap_url('settings')}" class="primary-btn btn link"><i class="fa fa-caret-right"></i> @(Update account)</a>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="contentbody npb">
+			<h3 class="caption">@(My orders) (<b data-b="orders" data-b-html="value ? value.length : 0"></b>)</h3>
+		</div>
+
+		<div data-b="orders" data-b-visible="!value || !value.length" class="hidden">
+			<div class="empty"><i class="fa fa-dropbox"></i>@(You don't have any orders.)</div>
+		</div>
+
+		<div data-b="orders" data-b-template="true" class="hidden" data-b-visible="value && value.length">
+			<script type="text/html">
+				{{ foreach m in value }}
+				<div class="col-md-4">
+					<div class="panel {{ if m.isfinished }} panel-success {{ else }} panel-info {{fi}}">
+						<div class="panel-heading">
+							<div class="status"><a href="@{sitemap_url('order', '{{ m.id }}')}" title="@(Preview)">{{ if m.isfinished }}<b class="green"><i class="fa fa-check-circle"></i> @(Finished)</b>{{ else }} <i class="fa fa-eye"></i> {{ m.status }}{{ fi }}</a> </div>
+						</div>
+						<div class="panel-body">
+
+							<div class="order">
+								<div class="line">
+									<div class="price">{{ m.price | format(2) }}</div>
+									<div class="name">{{ m.name }}</div>
+								</div>
+								<div class="line">
+									<div class="date">{{ m.datecreated | format('@(yyyy-MM-dd HH:mm)') }}</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{ end }}
+			</script>
+		</div>
+	</div>
+</div>
+
+<!--<div class="row">
 
 	<div class="col-md-4 m">
 
@@ -62,7 +111,7 @@
 		</div>
 	</div>
 
-</div>
+</div>-->
 
 <script>
 	SETTER(true, 'loading', 'hide', 1000);

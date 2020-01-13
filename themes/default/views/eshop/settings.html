@@ -8,12 +8,12 @@
 		<hr class="darker" />
 
 		<div class="keyvalue">
-			<div class="key">@(Registered)</div>
+			<strong class="key">@(Registered)</strong>
 			<div class="value" data-b="settings.datecreated" data-b-html="value ? value.format('@(yyyy-MM-dd HH:mm)') : '...'"></div>
 		</div>
 
 		<div class="keyvalue">
-			<div class="key">@(Discount)</div>
+			<strong class="key">@(Discount)</strong>
 			<div class="value" data-b="settings.discount" data-b-html="(value ? value.format(2) : '0') + '%'"></div>
 		</div>
 
@@ -57,7 +57,7 @@
 				</div>
 				<div data-jc="error" data-jc-path="settings.response"></div>
 				<div data-jc="validation" data-jc-path="settings">
-					<button class="button b exec" data-exec="settingssubmit" name="submit" disabled="disabled">@(Submit)</button>
+					<button class="primary-btn btn button b exec" data-exec="settingssubmit" name="submit" disabled="disabled">@(Submit)</button>
 				</div>
 			</div>
 		</div>
