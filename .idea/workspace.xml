@@ -3,23 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="2b057afc-0a44-4419-a03e-81d27734ed5f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databases/orders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/databases/orders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databases/orders.nosql" beforeDir="false" afterPath="$PROJECT_DIR$/databases/orders.nosql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databases/orders.nosql-counter2" beforeDir="false" afterPath="$PROJECT_DIR$/databases/orders.nosql-counter2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/databases/pages.nosql-counter2" beforeDir="false" afterPath="$PROJECT_DIR$/databases/pages.nosql-counter2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databases/products.nosql" beforeDir="false" afterPath="$PROJECT_DIR$/databases/products.nosql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/databases/products.nosql-counter2" beforeDir="false" afterPath="$PROJECT_DIR$/databases/products.nosql-counter2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databases/products.nosql-log" beforeDir="false" afterPath="$PROJECT_DIR$/databases/products.nosql-log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/databases/users.nosql-counter2" beforeDir="false" afterPath="$PROJECT_DIR$/databases/users.nosql-counter2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/databases/visitors.cache" beforeDir="false" afterPath="$PROJECT_DIR$/databases/visitors.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/databases/visitors.nosql" beforeDir="false" afterPath="$PROJECT_DIR$/databases/visitors.nosql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/databases/visitors.nosql-counter2" beforeDir="false" afterPath="$PROJECT_DIR$/databases/visitors.nosql-counter2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/e-shop-colorlib/e-shop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/e-shop-colorlib/e-shop/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/default/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/public/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/public/js/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/public/js/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/public/js/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/public/js/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/cms/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/cms/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/default/views/eshop/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/eshop/account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/default/views/eshop/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/eshop/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/default/views/eshop/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/eshop/order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/default/views/eshop/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/eshop/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/eshop/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/eshop/signin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/default/views/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/partials/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/partials/products.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,38 +32,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/checkout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="126">
+              <caret line="279" column="32" selection-start-line="279" selection-start-column="24" selection-end-line="279" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/_default/views/eshop/checkout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
-            </state>
-          </provider>
+      <file leaf-file-name="globals.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/definitions/globals.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="8" selection-start-line="9" selection-start-column="30" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="45">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="14" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="350">
+              <caret line="147" column="12" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="164" column="54" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.nosql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/databases/users.nosql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="235" selection-start-column="235" selection-end-column="275" />
             </state>
           </provider>
         </entry>
@@ -69,26 +85,26 @@
       <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/public/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4335">
-              <caret line="289" column="1" selection-start-line="289" selection-start-column="1" selection-end-line="289" selection-end-column="1" />
+            <state relative-caret-position="186">
+              <caret line="184" column="22" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/_default/views/eshop/order.html">
+      <file leaf-file-name="products.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/partials/products.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="155">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/account.html">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/cms/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="111">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
             </state>
           </provider>
         </entry>
@@ -96,8 +112,8 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/views/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2190">
-              <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
+            <state relative-caret-position="300">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -106,41 +122,45 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sum</find>
-      <find>.sum</find>
-      <find>summarize.</find>
-      <find>summarize</find>
-      <find>Place</find>
-      <find>BILLING DETAILS</find>
-      <find>Delivery address</find>
-      <find>Order detail</find>
-      <find>table table-bordered bg-white</find>
-      <find>paypal</find>
-      <find>@(De</find>
-      <find>login</find>
-      <find>copty</find>
-      <find>Already a customer</find>
-      <find>accout</find>
-      <find>@(Your shopping cart is empty, &lt;b&gt;try to visit this page later.&lt;/b&gt;)</find>
-      <find>Cop</find>
-      <find>submit</find>
-      <find>copy</find>
-      <find>form</find>
-      <find>pay</find>
-      <find>You</find>
-      <find>IP address</find>
-      <find>Del</find>
-      <find>langauge</find>
-      <find>infor</find>
-      <find>&lt;form</find>
-      <find>Order status:</find>
-      <find>e</find>
-      <find>empty</find>
+      <find>#fff</find>
+      <find>product-main-view</find>
+      <find>input search-categories</find>
+      <find>del</find>
+      <find>del</find>
+      <find>&lt;del</find>
+      <find>.header-search &gt;</find>
+      <find>.header-search</find>
+      <find>ui-autocomplete</find>
+      <find>ui-autocomplete-container</find>
+      <find>top</find>
+      <find>.header-search&gt;form .search-input</find>
+      <find>#00c37a</find>
+      <find>'@'</find>
+      <find>header-search</find>
+      <find>footer</find>
+      <find>account.sigin</find>
+      <find>account.password.response</find>
+      <find>message</find>
+      <find>.top</find>
+      <find>pull-right</find>
+      <find>description</find>
+      <find>fa fa-heart</find>
+      <find>passwor</find>
+      <find>password</find>
+      <find>#f86849</find>
+      <find>.products .product</find>
+      <find>ui-</find>
+      <find>Delivery</find>
+      <find>page-header</find>
     </findStrings>
     <replaceStrings>
       <replace>lamsa</replace>
       <replace>default</replace>
       <replace>/img</replace>
+      <replace>#00c37a</replace>
+      <replace>#46e4b8</replace>
+      <replace>#e91e63</replace>
+      <replace>page-header card</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/themes/lamsa</dir>
@@ -148,9 +168,9 @@
       <dir>$PROJECT_DIR$/themes/lamsa/views/cms</dir>
       <dir>$PROJECT_DIR$/themes/lamsa/views</dir>
       <dir>$PROJECT_DIR$/themes</dir>
-      <dir>$PROJECT_DIR$/themes/default</dir>
-      <dir>$PROJECT_DIR$/themes/default/views</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/themes/default/views</dir>
+      <dir>$PROJECT_DIR$/themes/default</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -171,23 +191,25 @@
         <option value="$PROJECT_DIR$/themes/lamsa/views/partials/categories.html" />
         <option value="$PROJECT_DIR$/themes/lamsa/views/layout.html" />
         <option value="$PROJECT_DIR$/themes/default/index.js" />
-        <option value="$PROJECT_DIR$/themes/default/public/js/ui.js" />
         <option value="$PROJECT_DIR$/themes/default/views/partials/breadcrumb.html" />
         <option value="$PROJECT_DIR$/themes/default/public/js/main.js" />
-        <option value="$PROJECT_DIR$/themes/default/views/cms/product.html" />
-        <option value="$PROJECT_DIR$/themes/default/public/js/default.js" />
         <option value="$PROJECT_DIR$/themes/default/views/partials/sliders.html" />
         <option value="$PROJECT_DIR$/themes/default/views/index.html" />
         <option value="$PROJECT_DIR$/release.js" />
-        <option value="$PROJECT_DIR$/themes/default/views/partials/products.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config" />
-        <option value="$PROJECT_DIR$/themes/default/views/layout.html" />
+        <option value="$PROJECT_DIR$/themes/default/views/partials/products.html" />
+        <option value="$PROJECT_DIR$/themes/default/public/js/ui.js" />
         <option value="$PROJECT_DIR$/themes/default/views/eshop/account.html" />
-        <option value="$PROJECT_DIR$/themes/default/views/eshop/order.html" />
-        <option value="$PROJECT_DIR$/themes/default/public/css/global.css" />
-        <option value="$PROJECT_DIR$/themes/default/views/eshop/settings.html" />
+        <option value="$PROJECT_DIR$/themes/default/public/js/default.js" />
+        <option value="$PROJECT_DIR$/themes/default/views/eshop/signin.html" />
+        <option value="$PROJECT_DIR$/themes/default/views/layout.html" />
+        <option value="$PROJECT_DIR$/themes/default/views/cms/product.html" />
         <option value="$PROJECT_DIR$/themes/default/views/eshop/checkout.html" />
+        <option value="$PROJECT_DIR$/definitions/helpers.js" />
+        <option value="$PROJECT_DIR$/themes/default/views/eshop/settings.html" />
+        <option value="$PROJECT_DIR$/themes/default/public/css/global.css" />
+        <option value="$PROJECT_DIR$/themes/default/views/eshop/order.html" />
       </list>
     </option>
   </component>
@@ -226,6 +248,11 @@
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="databases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -233,21 +260,6 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -276,7 +288,7 @@
     <property name="SearchEverywhereHistoryKey" value="layou&#9;FILE&#9;file:///home/youssefeloualid/Public/NodeJS/shop/themes/default/views/layout.html&#10;config&#9;FILE&#9;file:///home/youssefeloualid/Public/NodeJS/shop/config&#10;glob&#9;FILE&#9;file:///home/youssefeloualid/Public/NodeJS/shop/themes/default/public/css/global.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../compiler" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -355,14 +367,24 @@
       <workItem from="1578227350704" duration="11000" />
       <workItem from="1578395804679" duration="15064000" />
       <workItem from="1578585976892" duration="590000" />
+      <workItem from="1578913450892" duration="149000" />
+      <workItem from="1579368008012" duration="23894000" />
     </task>
+    <task id="LOCAL-00001" summary="add style">
+      <created>1578913499110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578913499110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53853000" />
+    <option name="totallyTimeSpent" value="77896000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1600" height="900" extended-state="6" />
+    <frame x="0" y="27" width="1600" height="816" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -373,12 +395,13 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29211956" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32822084" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29141104" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26254827" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15830116" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -390,7 +413,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,49 +421,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="add style" />
+    <option name="LAST_COMMIT_MESSAGE" value="add style" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3615">
-          <caret line="241" column="22" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/public/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/e-shop-colorlib/e-shop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8235">
-          <caret line="549" column="4" selection-start-line="549" selection-start-column="4" selection-end-line="592" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/layout-preview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -513,13 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="122" column="14" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/public/js/component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -527,24 +506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/public/js/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="148" column="18" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/e-shop-colorlib/e-shop/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8235">
           <caret line="549" column="4" selection-start-line="549" selection-start-column="4" selection-end-line="592" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/partials/sliders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -569,20 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/cms/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/partials/products.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -597,24 +548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/public/js/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -632,38 +569,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/account.html">
+    <entry file="file://$PROJECT_DIR$/themes/default/views/partials/sliders.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="660">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/public/css/global.css">
+    <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4335">
-          <caret line="289" column="1" selection-start-line="289" selection-start-column="1" selection-end-line="289" selection-end-column="1" />
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/public/js/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2004">
+          <caret line="1439" column="2" selection-start-line="1439" selection-end-line="1453" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="122" column="14" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/public/js/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/partials/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/cms/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/definitions/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/paypal.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/definitions/globals.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="164" column="54" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databases/users.nosql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="235" selection-start-column="235" selection-end-column="275" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" selection-start-line="9" selection-start-column="30" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="45">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="126">
+          <caret line="279" column="32" selection-start-line="279" selection-start-column="24" selection-end-line="279" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/public/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="184" column="22" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/eshop/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="147" column="12" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
         </state>
       </provider>
     </entry>

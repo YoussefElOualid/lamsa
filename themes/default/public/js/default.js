@@ -1,5 +1,33 @@
 UPTODATE('1 day');
 
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+        typeof define === 'function' && define.amd ? define(factory) :
+            global.toastIt = factory();
+}(this, function () {
+    'use strict';
+
+    var toastIt = function (text, timeout, options) {
+        var timeout = timeout || 3000;
+        var toast = document.createElement('DIV');
+        toast.classList.add('toast-it');
+        var content = document
+            .createTextNode(text);
+        toast.appendChild(content);
+        toast.style.animationDuration = timeout/1000 + 's';
+
+        for (var prop in options) {
+            toast.style[prop] = options[prop];
+        }
+
+        document.body.appendChild(toast);
+        setTimeout(function () {
+            document.body.removeChild(toast);
+        }, timeout);
+    };
+    return toastIt;
+}));
+
 var common = {};
 
 // Online statistics for visitors

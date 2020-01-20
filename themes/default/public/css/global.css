@@ -5,7 +5,195 @@
 @import 'font-awesome.min.css';
 @import 'style.css';
 
+body {
+    height: 500px;
+}
 
+.demo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+#msg {
+    width: 245px;
+}
+}
+
+.toast-it {
+    background-color: #555555;
+    color: #F4F4F4;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    /* center horizontally */
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+
+    animation-name: TOAST-APPEAR;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+@keyframes TOAST-APPEAR {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        top: 80%;
+    }
+    100% {
+        opacity: 0;
+        top: 40%;
+    }
+}
+
+
+i.fa {
+    margin-right: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .pannier-account {
+        position: fixed;
+        bottom: 0px;
+        background: #fff;
+        left: 0;
+        right: 0;
+        padding: 0 25px;
+        z-index: 99999;
+    }
+    .pull-logo {
+        text-align: center;
+    }
+    .pull-logo .header-logo img{
+        width: 100px;
+    }
+    .header-search, #breadcrumb {
+        width: 100% !important;
+    }
+    header {
+        position: inherit!important;
+    }
+    #header .header-search{
+        padding: 5px 0 !important;
+    }
+    #header {
+    padding: 0!important;
+    }
+}
+
+
+body {
+    background-color: #f2f2f2 !important;
+    font-family: 'Poppins', Verdana, sans-serif !important;
+}
+h1, h2, h3, h5, h6 {
+    font-family: 'Poppins', Verdana, sans-serif !important;
+}
+.menu-nav .menu-list>li>a {
+    display: block;
+    padding: 15px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header {
+    box-shadow: 0 12px 30px 0 rgba(0,0,0,0.07);
+    background: #fff;
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 99998;
+    transition: all 1s;
+}
+.product-body {
+    text-align: center;
+}
+#navigation, #breadcrumb {
+    margin: 0 auto;
+    width: 72%;
+    padding: 0;
+    background: #fff;
+}
+#navigation > .container {
+    margin: 0!important;
+    padding: 0!important;
+}
+.product-details .slick-list, #product-view{
+    background: #fff;
+    border-radius: 15px;
+}
+.account {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+.wlinkbutton:hover{
+    background-color: #46c47a;
+}
+.ui-autocomplete-container {
+    overflow: auto;
+    position: absolute;
+    padding: 10px 20px;
+    background: #fff;
+    z-index: 999;
+    width: calc(100% - 30px);
+}
+
+.panel-info>.panel-heading {
+    color: #ffffff;
+    background-color: #47cde3;
+    border-color: #47cde3;
+}
+.panel-info>.panel-heading a, .panel-success>.panel-heading a{
+    color: #fff
+}
+.panel-success>.panel-heading {
+    color: #ffffff;
+    background-color: #45e0b4;
+    border-color: #45e0b4;
+}
+.ui-autocomplete  li {
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    background: #fff
+}
+.ui-autocomplete  li span:nth-child(1){
+    flex-grow: 1
+}
+.header-search>form .search-input {
+    padding-left: 15px !important;
+}
+.description {
+    background: #fff;
+    padding: 30px 10px 15px;
+    border-radius: 15px;
+}
+.page-header:not(.card) h3 i {
+    font-size: 5em;
+    padding-bottom: 10px
+}
+.page-header:not(.card) h3 {
+    background: #46e4b8;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 700px;
+    border-radius: 15px;
+}
 .product.product-single .product-name {
     -webkit-line-clamp: 1;
     overflow: hidden;
@@ -18,6 +206,15 @@
     left: 25px;
     z-index: 999;
     top: 25px;
+}
+.products .product {
+    background: #fff;
+    margin: 15px 0;
+    border-radius: 15px;
+    position: relative;
+}
+.header-search {
+    width: 50%;
 }
 .ui-textbox input{
     width: 100%;
@@ -42,7 +239,7 @@
 .checkout-container .name i{
     position: absolute;
     right: 0;
-    color: #f86849
+    color: #e91e63
 }
 .checkout-container > div {
     flex-grow: 1;
@@ -285,6 +482,6 @@ button[disabled]{
 }
 
 .list-group-item.disabled {
-    background: #f86849;
+    background: #e91e63;
     color: #fff;
 }

@@ -8,6 +8,7 @@
 	<meta name="robots" content="all,follow" />
 
 	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="//cdn.componentator.com/spa.min@14.css" />
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,700" />
@@ -26,7 +27,7 @@
 	<!-- header -->
 	<div id="header">
 		<div class="container">
-			<div class="pull-left">
+			<div class="pull-left pull-logo">
 				<!-- Logo -->
 				<div class="header-logo">
 					<a class="logo" href="/">
@@ -35,22 +36,17 @@
 				</div>
 				<!-- /Logo -->
 
-				<!-- Search -->
-				<div class="header-search">
-					<form class="search" action="@{sitemap_url('category')}" method="get">
-						<input class="input search-input" type="text" placeholder="@(Search products ...)" name="q" value="@{query.q}" id="search" autocomplete="off" />
-						<div data-jc="autocomplete"></div>
-						<select class="input search-categories">
-							<option value="0">All Categories</option>
-							<option value="1">Category 01</option>
-							<option value="1">Category 02</option>
-						</select>
-						<button class="search-btn"><i class="fa fa-search"></i></button>
-					</form>
-				</div>
-				<!-- /Search -->
 			</div>
-			<div class="pull-right">
+			<!-- Search -->
+			<div class="header-search">
+				<form class="search" action="@{sitemap_url('category')}" method="get">
+					<input class="input search-input" type="text" placeholder="@(Search products ...)" name="q" value="@{query.q}" id="search" autocomplete="off" />
+					<button class="search-btn"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+			<div data-jc="autocomplete"></div>
+			<!-- /Search -->
+			<div class="pull-right pannier-account">
 				<ul class="header-btns">
 					<!-- Account -->
 					<li class="header-account dropdown default-dropdown">
@@ -148,7 +144,7 @@
 		<!-- row -->
 		<div class="row">
 			<!-- footer widget -->
-			<div class="col-md-3 col-sm-6 col-xs-6">
+			<div class="col-md-12 col-sm-12 col-xs-12 text-center">
 				<div class="footer">
 					<!-- footer logo -->
 					<div class="footer-logo">
@@ -162,62 +158,16 @@
 
 					<!-- footer social -->
 					<ul class="footer-social">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/Lamsa-Shop-113222180089024"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="https://web.whatsapp.com/send?phone=+212687186232&text=Salam%20!"><i class="fa fa-whatsapp"></i></a></li>
 					</ul>
 					<!-- /footer social -->
 				</div>
 			</div>
 			<!-- /footer widget -->
 
-			<!-- footer widget -->
-			<div class="col-md-3 col-sm-6 col-xs-6">
-				<div class="footer">
-					<h3 class="footer-header">My Account</h3>
-					<ul class="list-links">
-						<li><a href="#">My Account</a></li>
-						<li><a href="#">My Wishlist</a></li>
-						<li><a href="#">Compare</a></li>
-						<li><a href="#">Checkout</a></li>
-						<li><a href="#">Login</a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- /footer widget -->
 
-			<div class="clearfix visible-sm visible-xs"></div>
-
-			<!-- footer widget -->
-			<div class="col-md-3 col-sm-6 col-xs-6">
-				<div class="footer">
-					<h3 class="footer-header">Customer Service</h3>
-					<ul class="list-links">
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Shiping &amp; Return</a></li>
-						<li><a href="#">Shiping Guide</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- /footer widget -->
-
-			<!-- footer subscribe -->
-			<div class="col-md-3 col-sm-6 col-xs-6">
-				<div class="footer">
-					<h3 class="footer-header">Stay Connected</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-					<form>
-						<div class="form-group">
-							<input class="input" placeholder="Enter Email Address">
-						</div>
-						<button class="primary-btn">Join Newslatter</button>
-					</form>
-				</div>
-			</div>
-			<!-- /footer subscribe -->
 		</div>
 		<!-- /row -->
 		<hr>
@@ -226,9 +176,7 @@
 			<div class="col-md-8 col-md-offset-2 text-center">
 				<!-- footer copyright -->
 				<div class="footer-copyright">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright ©<script>document.write(new Date().getFullYear());</script>2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright ©<script>document.write(new Date().getFullYear());</script> &nbsp; 2019 All rights reserved By Lamsa Shop
 				</div>
 				<!-- /footer copyright -->
 			</div>

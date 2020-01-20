@@ -37,7 +37,7 @@
 						@{fi}
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 description">
 					<div class="product-body">
 						<h2 class="product-name">@{title}</h2>
 						<h3 class="product-price">
@@ -55,7 +55,7 @@
 
 							@{if model.stock}
 								@{if model.priceold}
-									<del class="product-old-price">@{!model.priceold.currency()}</del>
+									<br><del class="product-old-price">@{!model.priceold.currency()}</del>
 								@{fi}
 							@{fi}
 						</h3>
@@ -123,14 +123,10 @@
 								<span class="text-uppercase">QTY: </span>
 								<input class="input" type="number">
 							</div>-->
-							<div class="pull-right">
-								<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
-								<button class="main-btn icon-btn"><i class="fa fa-share-alt"></i></button>
-							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12">
+				<div class="col-md-12 description">
 					@{if model.body}
 						<div class="product-tab">
 							<ul class="tab-nav">

@@ -1,134 +1,135 @@
-<div class="row">
-	<h1>@{title}</h1>
-</div>
-<div class="row text-center">
-	<div class="col-md-3">
-		<div class="page-header">
-			<h3><i class="fa fa-"></i> @(Order status:) <br><small>@{model.status}</small></h3>
-		</div>
+<div class="description">
+	<div class="row">
+		<h1>@{title}</h1>
 	</div>
-	<div class="col-md-3">
-		<div class="page-header">
-			<h3><i class="fa fa-dropbox"></i> @(Delivery) <br><small>@{model.delivery}</small></h3>
+	<div class="row text-center">
+		<div class="col-md-3">
+			<div class="page-header card">
+				<h3><i class="fa fa-"></i> @(Order status:) <br><small>@{model.status}</small></h3>
+			</div>
 		</div>
-	</div>
-	<div class="col-md-3">
-		<div class="page-header">
-			<h3><i class="fa fa-dropbox"></i> @(Payment)<br><small>@{model.payment}</small></h3>
+		<div class="col-md-3">
+			<div class="page-header card">
+				<h3><i class="fa fa-dropbox"></i> @(Delivery) <br><small>@{model.delivery}</small></h3>
+			</div>
 		</div>
-	</div>
-	<div class="col-md-3 ">
-		@{if model.ispaid}
-			<div class="page-header">
+		<div class="col-md-3">
+			<div class="page-header card">
+				<h3><i class="fa fa-dropbox"></i> @(Payment)<br><small>@{model.payment}</small></h3>
+			</div>
+		</div>
+		<div class="col-md-3 ">
+			@{if model.ispaid}
+			<div class="page-header card">
 				<h3><i class="fa fa-dropbox"></i> @(Payment Status)<br><small>
 					@(Paid) @{model.datepaid.format('yyyy-MM-dd HH:mm')}
 				</small></h3>
 			</div>
-		@{else}
-			<div class="page-header">
+			@{else}
+			<div class="page-header card">
 				<h3><i class="fa fa-dropbox"></i> @(Payment Status)<br><small><span class="badge badge-danger">@(NOT PAID)</span></small></h3>
 			</div>
-		@{fi}
+			@{fi}
+		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col-md-12">
+	<div class="row">
+		<div class="col-md-12">
 
-		<div class="col-md-4">
-			<div class="list-group">
+			<div class="col-md-4">
+				<div class="list-group">
+					<div class="list-group-item disabled">
+						@(Informations)
+					</div>
+					<div class="list-group-item">
+						@(Customer) : @{model.firstname} @{model.lastname}
+					</div>
+					<div class="list-group-item">
+						@(Email address) : @{model.email}
+					</div>
+
+					<div class="list-group-item">
+						@(Phone number) : @{model.phone}
+					</div>
+
+					@{if model.note}
+					<div class="list-group-item">
+						@(Note) : @{model.note}
+					</div>
+					@{fi}
+					<div class="list-group-item">
+						@(Created) : @{model.datecreated.format('yyyy-MM-dd HH:mm')}
+					</div>
+
+					<div class="list-group-item">
+						@(Price) : @{!model.price.currency()}
+					</div>
+
+					<div class="list-group-item">
+						@(Ordered items) : @{model.count}x
+					</div>
+
+					<div class="list-group-item">
+						@(Discount) : @{model.discount}%
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-4">
 				<div class="list-group-item disabled">
-					@(Informations)
+					@(Delivery address)
 				</div>
-				<div class="list-group-item">
-					@(Customer) : @{model.firstname} @{model.lastname}
-				</div>
-				<div class="list-group-item">
-					@(Email address) : @{model.email}
-				</div>
-
-				<div class="list-group-item">
-					@(Phone number) : @{model.phone}
-				</div>
-
-				@{if model.note}
-				<div class="list-group-item">
-					@(Note) : @{model.note}
-				</div>
-				@{fi}
-				<div class="list-group-item">
-					@(Created) : @{model.datecreated.format('yyyy-MM-dd HH:mm')}
-				</div>
-
-				<div class="list-group-item">
-					@(Price) : @{!model.price.currency()}
-				</div>
-
-				<div class="list-group-item">
-					@(Ordered items) : @{model.count}x
-				</div>
-
-				<div class="list-group-item">
-					@(Discount) : @{model.discount}%
+				<div class="list-group">
+					<div class="list-group-item">
+						@{model.deliveryfirstname} @{model.deliverylastname}
+					</div>
+					<div class="list-group-item">
+						@{model.deliverystreet}
+					</div>
+					<div class="list-group-item">
+						@{model.deliveryzip}
+					</div>
+					<div class="list-group-item">
+						@{model.deliverycity}
+					</div>
+					<div class="list-group-item">
+						@{model.deliverycountry}
+					</div>
+					<div class="list-group-item">
+						@{model.deliveryphone}
+					</div>
 				</div>
 			</div>
+			<div class="col-md-4">
+				<div class="list-group-item disabled">
+					@(Billing address)
+				</div>
+				<div class="list-group">
+					<div class="list-group-item">
+						@{model.billingzip}
+					</div>
+					<div class="list-group-item">
+						@{model.billingcity}<br />@{model.billingcountry}
+					</div>
+					<div class="list-group-item">
+						@{model.billingcountry}
+					</div>
+				</div>
+			</div>
+
 
 		</div>
-		<div class="col-md-4">
-			<div class="list-group-item disabled">
-				@(Delivery address)
-			</div>
-			<div class="list-group">
-				<div class="list-group-item">
-					@{model.deliveryfirstname} @{model.deliverylastname}
-				</div>
-				<div class="list-group-item">
-					@{model.deliverystreet}
-				</div>
-				<div class="list-group-item">
-					@{model.deliveryzip}
-				</div>
-				<div class="list-group-item">
-					@{model.deliverycity}
-				</div>
-				<div class="list-group-item">
-					@{model.deliverycountry}
-				</div>
-				<div class="list-group-item">
-					@{model.deliveryphone}
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="list-group-item disabled">
-				@(Billing address)
-			</div>
-			<div class="list-group">
-				<div class="list-group-item">
-					@{model.billingzip}
-				</div>
-				<div class="list-group-item">
-					@{model.billingcity}<br />@{model.billingcountry}
-				</div>
-				<div class="list-group-item">
-					@{model.billingcountry}
-				</div>
-			</div>
-		</div>
-
-
+		<div class="col-md-2"></div>
 	</div>
-	<div class="col-md-2"></div>
-</div>
-<h2>@(Ordered items)</h2>
-<table class="table table-bordered bg-white">
-	<thead>
+	<h2>@(Ordered items)</h2>
+	<table class="table table-bordered bg-white">
+		<thead>
 		<tr>
 			<th>@(Product name)</th>
 			<th class="ui-center col-xs-1">@(Count)</th>
 			<th class="ui-right col-sm-3 col-xs-4">@(Price)</th>
 		</tr>
-	</thead>
-	<tbody class="orderedproducts">
+		</thead>
+		<tbody class="orderedproducts">
 		@{foreach m in model.items}
 		<tr>
 			<td>@{m.name}</td>
@@ -136,15 +137,16 @@
 			<td class="ui-right col-sm-3 col-xs-4">@{!(m.count * m.price).currency()}</td>
 		</tr>
 		@{end}
-	</tbody>
-	<tfoot>
+		</tbody>
+		<tfoot>
 		<tr class="bg-yellow">
 			<td class="b">@(Summarize)</td>
 			<td class="b ui-center">@{model.count}</td>
 			<td class="b ui-right red">@{!model.price.currency()}</td>
 		</tr>
-	</tfoot>
-</table>
+		</tfoot>
+	</table>
+</div>
 
 <script>
 	function pay(btn) {

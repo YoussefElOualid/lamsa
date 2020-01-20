@@ -1437,7 +1437,7 @@ COMPONENT('autocomplete', 'height:200', function(self, config) {
 
 	self.resize = function() {
 
-		if (!offsetter || !old)
+/*		if (!offsetter || !old)
 			return;
 
 		var offset = offsetter.offset();
@@ -1451,7 +1451,7 @@ COMPONENT('autocomplete', 'height:200', function(self, config) {
 		if (margin.width)
 			offset.width += margin.width;
 
-		self.css(offset);
+		self.css(offset);*/
 	};
 
 	self.attach = function(input, search, callback, top, left, width) {
